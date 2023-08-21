@@ -1,0 +1,168 @@
+:root {
+    --c-1: #9c34c2;
+    --c-2: #37d0ee;
+    --c-3: #eed9f7;
+    --c-4: #ff014f;
+    --c-5: #25d366;
+
+
+}
+
+/* Main Wrapper */
+.main-wrapper {
+    padding: 10px;
+}
+
+/* Title */
+.title {
+    color: #9c34c2;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.title-2 {
+    border-radius: 5px;
+    background-color: #9c34c2;
+    color: #37d0ee;
+}
+
+/* Add Todo Input */
+.form-control {
+    border-radius: 25px;
+    padding: 10px 10px 10px 20px;
+    border: 1px solid transparent;
+    background-color: var(--c-3);
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    color: var(--c-1);
+    border: 1px solid var(--c-1);
+    background-color: var(--c-3);
+    box-shadow: none !important;
+}
+
+/* Add Todo Button */
+.btn-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 4px 30px 5px 30px;
+    border: 1px solid var(--c-1);
+    color: var(--c-1);
+    background-color: var(--c-3);
+}
+
+.btn-1:hover {
+    transition: 0.3s;
+    background-color: var(--c-1);
+    color: var(--c-3);
+}
+
+
+/* List Wrapper */
+.list-wrapper {
+    padding: 10px;
+    max-height: 38vh;
+    min-height: auto;
+    border-radius: 5px;
+    overflow-y: scroll;
+    background-color: var(--c-3);
+}
+
+/* Chrome, Edge and Safari */
+.list-wrapper::-webkit-scrollbar {
+    width: 4px;
+    width: 4px;
+}
+
+.list-wrapper::-webkit-scrollbar-track {
+    border-radius: 6px;
+    background-color: transparent;
+}
+
+.list-wrapper::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--c-2);
+}
+
+/* Single list item */
+.list-item {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    color: #fff;
+    border: 1px solid var(--c-1);
+    border-radius: 25px;
+    background-color: var(--c-1);
+}
+
+.list-item:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--c-1);
+    background-color: #fff;
+    scale: 1.01;
+    box-shadow: 0px 4px 10px 0px #9c34c2;
+
+    .btn-edit {
+        color: var(--c-5);
+    }
+
+    .btn-remove {
+        color: var(--c-4);
+    }
+}
+
+/* List Edit Button */
+.btn-edit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 6px;
+    border-radius: 100%;
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+
+.btn-edit:hover {
+    transition: 0.3s;
+    background-color: #25d36559;
+}
+
+
+/* List Remove Button */
+.btn-remove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px 0px 6px;
+    border-radius: 100%;
+    color: #fff;
+    background: transparent;
+    border: none;
+}
+
+.btn-remove:hover {
+    transition: 0.3s;
+    background-color: #ff014d6e;
+}
+
+/* CLEAR LIST BUTTON */
+.btn-clear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px 5px 15px;
+    border-radius: 25px;
+    border: 1px solid var(--c-1);
+    color: var(--c-1);
+    background-color: var(--c-3);
+}
+
+.btn-clear:hover {
+    transition: 0.3s;
+    background-color: var(--c-1);
+    color: var(--c-3);
+}
